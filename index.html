@@ -80,7 +80,7 @@
       <!-- <div class="intro-vid"> -->
       <div class="row">
         <div class="container">
-          <div class="col-12 hidden-sm"></div>
+          <div class="col-13 hidden-sm"></div>
           <div class="col-6">
             <body>
               <!-- <iframe width="711" height="400" src="https://www.youtube.com/embed/JeI3WU37Ifk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
@@ -115,6 +115,172 @@
         </div>
         </div>
       </div>
+
+      <!-- Policies -->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <h2 class="center m-bottom">Learned Tasks</h2>
+        </div>
+        
+        <br><br><br>
+
+        <div class="col-4">
+            <img src="./mfiles/main_task/gamepad.gif"/>
+            <h3 class="center">Joystick Movement</h3>
+        </div>
+        <div class="col-4">
+            <img src="./mfiles/main_task/bottle_opening.gif"/>
+            <h3 class="center">Bottle Cap Opening</h3>
+        </div>
+        <div class="col-4">
+            <img src="./mfiles/main_task/book_opening.gif"/>
+            <h3 class="center">Book Opening</h3>
+        </div>
+
+        <div class="col-4">
+            <img src="./mfiles/main_task/bowl_picking.gif"/>
+            <h3 class="center">Bowl Unstacking</h3>
+        </div>
+        <div class="col-4">
+            <img src="./mfiles/main_task/cup_picking.gif"/>
+            <h3 class="center">Cup Unstacking</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Generalization Experiments -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center m-bottom">Generalization Experiments</h2>
+          <p>
+            We observed that policies learned was able to generalize on structurally similar but visually different objects 
+            in few of the tasks.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <h3 class="center m-bottom">Cup Unstacking</h3>
+        <div class="col-3">
+            <img src="./mfiles/main_task/gamepad.gif"/>
+            <h3 class="center">Joystick Movement</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/bottle_opening.gif"/>
+            <h3 class="center">Bottle Cap Opening</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/book_opening.gif"/>
+            <h3 class="center">Book Opening</h3>
+        </div>
+  
+        <div class="col-3">
+            <img src="./mfiles/main_task/bowl_picking.gif"/>
+            <h3 class="center">Bowl Unstacking</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/cup_picking.gif"/>
+            <h3 class="center">Cup Unstacking</h3>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <h3 class="center m-bottom">Bowl Unstacking</h3>
+        <div class="col-3">
+            <img src="./mfiles/main_task/gamepad.gif"/>
+            <h3 class="center">Joystick Movement</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/bottle_opening.gif"/>
+            <h3 class="center">Bottle Cap Opening</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/book_opening.gif"/>
+            <h3 class="center">Book Opening</h3>
+        </div>
+  
+        <div class="col-3">
+            <img src="./mfiles/main_task/bowl_picking.gif"/>
+            <h3 class="center">Bowl Unstacking</h3>
+        </div>
+        <div class="col-3">
+            <img src="./mfiles/main_task/cup_picking.gif"/>
+            <h3 class="center">Cup Unstacking</h3>
+        </div>
+      </div>
+      
+      <br><br><br>
+
+
+      <!-- <div class="row">
+        <h3 class="center">Generalization observed with unseen objects in Cup Unstacking task</h3>
+        <div class="c">
+          <input type="radio" name="cup_picking_gen" id="cup-1" checked>
+          <label for="cup-1" style="--hue: 82"></label>
+          <div class="ci" style="--z: 6">
+            <img src="./mfiles/generalization/cup_picking/cup_2_final.gif" alt="Trees">
+          </div>
+          
+          <input type="radio" name="cup_picking_gen" id="cup-2">
+          <label for="cup-2" style="--hue: 40"></label>
+          <div class="ci" style="--z: 5">
+            <img src="./mfiles/generalization/cup_picking/cup_3_final.gif" alt="Mountains and houses">
+          </div>
+          
+          <input type="radio" name="cup_picking_gen" id="cup-3">
+          <label for="cup-3" style="--hue: 210"></label>
+          <div class="ci" style="--z: 4">
+            <img src="./mfiles/generalization/cup_picking/cup_1_final.gif" alt="Sky and mountains">
+          </div>
+
+          <input type="radio" name="cup_picking_gen" id="cup-4">
+          <label for="cup-4" style="--hue: 210"></label>
+          <div class="ci" style="--z: 3">
+            <img src="./mfiles/generalization/cup_picking/cup_4_final.gif" alt="Sky and mountains">
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row">
+        <h3 class="center">Generalization observed with unseen objects in Bowl Unstacking task</h3>
+        <div class="c">
+          <input type="radio" name="bowl_picking_gen" id="bowl-1" checked>
+          <label for="bowl-1" style="--hue: 82"></label>
+          <div class="ci" style="--z: 6">
+            <img src="./mfiles/generalization/bowl_picking/bowl_4_final.gif" alt="Trees">
+          </div>
+          
+          <input type="radio" name="bowl_picking_gen" id="bowl-2">
+          <label for="bowl-2" style="--hue: 40"></label>
+          <div class="ci" style="--z: 5">
+            <img src="./mfiles/generalization/bowl_picking/bowl_6_final.gif" alt="Mountains and houses">
+          </div>
+          
+          <input type="radio" name="bowl_picking_gen" id="bowl-3">
+          <label for="bowl-3" style="--hue: 210"></label>
+          <div class="ci" style="--z: 4">
+            <img src="./mfiles/generalization/bowl_picking/bowl_3_final.gif" alt="Sky and mountains">
+          </div>
+
+          <input type="radio" name="bowl_picking_gen" id="bowl-4">
+          <label for="bowl-4" style="--hue: 210"></label>
+          <div class="ci" style="--z: 3">
+            <img src="./mfiles/generalization/bowl_picking/bowl_7_final.gif" alt="Sky and mountains">
+          </div>
+        </div>
+      </div>     -->
+
+    </div>
+
+    <br><br>
+
+
 
       <!--Abstract-->
       <!-- <div class="row">
@@ -166,7 +332,10 @@
       <div class="col-12">
         <p>
           We treat each tactile reading as if they are RGB images, where each channel corresponds to
-          different force axes. Train an encoder using self-supervised learning algorithms. And use nearest neighbor matching to retrieve the action.
+          different force axes. 
+          We train an encoder using self-supervised learning algorithms with the collected data
+            and use nearest neighbor matching to retrieve the action.
+          Below figure shows an overall of our framework.
         </p>
       </div>
     </div>
@@ -177,6 +346,17 @@
         allowfullscreen></img>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>
+          At each timestep, the closest example to the current observation is searched in the demonstration dataset.
+          Representations for the demonstration buffer and the current state are received from the image encoder
+            and the tactile encoder separately. And then concated with each other.
+          The action associated with that closest example is then executed on the robot.
+        </p>
+      </div>
+    </div>  
       
     <!-- Play Data Collection Heading -->
     <div class="container">
@@ -187,7 +367,7 @@
 
           <div class="col-6">
               <p> 
-                  Since it is hard to collect fine-grained dexterous demonstrations through teleoperation without the tactile feeling we train a tactile encoder
+                  Since it is hard to collect fine-grained dexterous demonstrations through teleoperation without the tactile feeling, we train a tactile encoder
                   through large amounts of play data. A teleoperator collects 2.5 hours of play demonstrations by using an Oculus headset and a buil-in Kinova joystick, 
                   shown in this figure.
               </p>
@@ -212,134 +392,6 @@
             </p>
           </div>
         </div>
-    </div>
-
-    <!-- <br><br> -->
-
-    <!-- Policies -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="center m-bottom">Policies</h2>
-          <p>
-            We use non-parametric imitation learning (Nearest Neighbors) to optimize our robot policies.
-            At each timestep, the closest example to the current observation is searched in the demonstration dataset.
-            Representations for the demonstration buffer and the current state are received from the image encoder
-              and the tactile encoder separately. And then concated with each other.
-            The action associated with that closest example is then executed on the robot.
-          </p>
-        </div>
-
-        <!-- TODO: NN videos here? -->
-
-        <div class="col-12">
-          <h2 class="center m-bottom">Our learned policies on 5 different tasks</h2>
-        </div>
-        
-        <br><br><br>
-
-        <div class="col-4">
-            <img src="./mfiles/main_task/gamepad.gif"/>
-            <h3 class="center">Joystick Movement</h3>
-        </div>
-        <div class="col-4">
-            <img src="./mfiles/main_task/bottle_opening.gif"/>
-            <h3 class="center">Bottle Cap Opening</h3>
-        </div>
-        <div class="col-4">
-            <img src="./mfiles/main_task/book_opening.gif"/>
-            <h3 class="center">Book Opening</h3>
-        </div>
-
-        <div class="col-4">
-            <img src="./mfiles/main_task/bowl_picking.gif"/>
-            <h3 class="center">Bowl Unstacking</h3>
-        </div>
-        <div class="col-4">
-            <img src="./mfiles/main_task/cup_picking.gif"/>
-            <h3 class="center">Cup Unstacking</h3>
-        </div>
-        <!-- <div class="col-4">
-            <img src="./mfiles/main_task/postit-note-sliding.gif"/>
-            <h3 class="center">Postit Note Sliding</h3>
-        </div> -->
-      </div>
-    </div>
-
-    <br><br>
-
-    <!-- Generalization Experiments -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="center m-bottom">Generalization Experiments</h2>
-          <p>
-            We observed that policies learned was able to generalize on structurally similar but visually different objects 
-            in few of the tasks.
-            <!-- We observed that imitation learning model was able to generalize on structurally and visually different 
-            objects in all the in-hand manipulation tasks. -->
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <h3 class="center">Generalization observed with unseen objects in Cup Unstacking task</h3>
-        <div class="c">
-          <input type="radio" name="cup_picking_gen" id="cup-1" checked>
-          <label for="cup-1" style="--hue: 82"></label>
-          <div class="ci" style="--z: 6">
-            <img src="./mfiles/generalization/cup_picking/cup_2_final.gif" alt="Trees">
-          </div>
-          
-          <input type="radio" name="cup_picking_gen" id="cup-2">
-          <label for="cup-2" style="--hue: 40"></label>
-          <div class="ci" style="--z: 5">
-            <img src="./mfiles/generalization/cup_picking/cup_3_final.gif" alt="Mountains and houses">
-          </div>
-          
-          <input type="radio" name="cup_picking_gen" id="cup-3">
-          <label for="cup-3" style="--hue: 210"></label>
-          <div class="ci" style="--z: 4">
-            <img src="./mfiles/generalization/cup_picking/cup_1_final.gif" alt="Sky and mountains">
-          </div>
-
-          <input type="radio" name="cup_picking_gen" id="cup-4">
-          <label for="cup-4" style="--hue: 210"></label>
-          <div class="ci" style="--z: 3">
-            <img src="./mfiles/generalization/cup_picking/cup_4_final.gif" alt="Sky and mountains">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <h3 class="center">Generalization observed with unseen objects in Bowl Unstacking task</h3>
-        <div class="c">
-          <input type="radio" name="bowl_picking_gen" id="bowl-1" checked>
-          <label for="bowl-1" style="--hue: 82"></label>
-          <div class="ci" style="--z: 6">
-            <img src="./mfiles/generalization/bowl_picking/bowl_4_final.gif" alt="Trees">
-          </div>
-          
-          <input type="radio" name="bowl_picking_gen" id="bowl-2">
-          <label for="bowl-2" style="--hue: 40"></label>
-          <div class="ci" style="--z: 5">
-            <img src="./mfiles/generalization/bowl_picking/bowl_6_final.gif" alt="Mountains and houses">
-          </div>
-          
-          <input type="radio" name="bowl_picking_gen" id="bowl-3">
-          <label for="bowl-3" style="--hue: 210"></label>
-          <div class="ci" style="--z: 4">
-            <img src="./mfiles/generalization/bowl_picking/bowl_3_final.gif" alt="Sky and mountains">
-          </div>
-
-          <input type="radio" name="bowl_picking_gen" id="bowl-4">
-          <label for="bowl-4" style="--hue: 210"></label>
-          <div class="ci" style="--z: 3">
-            <img src="./mfiles/generalization/bowl_picking/bowl_7_final.gif" alt="Sky and mountains">
-          </div>
-        </div>
-      </div>
-    
     </div>
 
     <br><br>
