@@ -293,8 +293,8 @@ p {
 
 .code {
   /* background-color: lightgray; */
-  font-family: 'Courier New', Courier, monospace;
-  font-size: small;
+  font-family: 'Arial', Courier New, Courier, monospace;
+  font-size: 20px;
   overflow-wrap: normal;
 }
 
