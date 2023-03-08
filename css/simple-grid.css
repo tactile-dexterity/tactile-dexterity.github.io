@@ -3,7 +3,7 @@
 /* UNIVERSAL */
 
 html,
-body {
+/* body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -12,6 +12,13 @@ body {
   top: 0;
   font-size: 20px;
   font-family: 'Arial';
+} */
+body {
+  font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ROOT FONT STYLES */
@@ -25,7 +32,7 @@ img {
 
 
 * {
-  font-family: 'Arial', Helvetica, sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: #333447;
   line-height: 1.5;
 }
