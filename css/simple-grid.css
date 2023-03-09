@@ -98,7 +98,7 @@ h6 {
 p {
   font-size: 1rem;
   font-weight: 200;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .font-light {
@@ -231,7 +231,7 @@ p {
 
   /* 540px */
   .container {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -251,7 +251,7 @@ p {
   }
 
   .col-4 {
-    width: 29.33%;
+    width: 30%;
   }
 
   .col-5 {
@@ -259,7 +259,7 @@ p {
   }
 
   .col-6 {
-    width: 46%;
+    width: 48%;
   }
 
   .col-7 {
