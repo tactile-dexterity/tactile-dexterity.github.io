@@ -141,14 +141,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="center col-6">
             <!-- <img src="./mfiles/main_task/bowl_picking.gif"/> -->
             <video class="center" width="320" playsinline muted autoplay loop>
               <source src="./mfiles/main_task/bowl_picking_frames_compressed.mp4" type="video/mp4">
             </video>
             <h4 class="center">Bowl Unstacking</h4>
         </div>
-        <div class="col-6">
+        <div class="center col-6">
             <!-- <img src="./mfiles/main_task/cup_picking.gif"/> -->
             <video class="center" width="320" playsinline muted autoplay loop>
               <source src="./mfiles/main_task/cup_picking_frames_compressed.mp4" type="video/mp4">
@@ -174,7 +174,7 @@
         <div class="col-6">
           <h4 class="center m-bottom">Cup Unstacking</h4>
           <video class="center" width="460" playsinline muted autoplay loop>
-            <source src="./mfiles/generalization/cup_unstacking.mp4" type="video/mp4">
+            <source src="./mfiles/generalization/cup_generalization.m4v" type="video/mp4">
           </video>
           <!-- <img src="./mfiles/generalization/cup_unstacking_gen.gif"/>  -->
           <p>
@@ -186,7 +186,7 @@
           <h4 class="center m-bottom">Bowl Unstacking</h4>
           <!-- <img src="./mfiles/generalization/bowl_unstacking_gen.gif"/>  -->
           <video class="center" width="460" playsinline muted autoplay loop>
-            <source src="./mfiles/generalization/bowl_unstacking.mp4" type="video/mp4">
+            <source src="./mfiles/generalization/bowl_generalization.m4v" type="video/mp4">
           </video>
           <p>
             Robot rollout for bowl unstacking task on different types of bowls.
@@ -232,64 +232,6 @@
       </div>
       <hr>
     </div>
-
-    <!-- <div class="row">
-      <div class="center img">
-        <img src="./mfiles/tdex_algo.png" style="max-width:1000px;width:60%" frameborder="0"
-        allowfullscreen></img>
-      </div>
-    </div> -->
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p>
-            At each timestep, the closest example to the current observation is searched in the demonstration dataset.
-            Representations for the demonstration buffer and the current state are received from the image encoder
-              and the tactile encoder separately. And then concated with each other.
-            The action associated with that closest example is then executed on the robot.
-          </p>
-        </div>
-      </div>  
-    </div> -->
-      
-
-    <!-- Play Data Collection Heading -->
-    <!-- <div class="container">
-        <div class="row">
-          <div class="col-12">
-              <h2 class="center m-bottom">Play Data Collection</h2> 
-          </div>
-
-          <div class="col-6">
-              <p> 
-                  Since it is hard to collect fine-grained dexterous demonstrations through teleoperation without the tactile feeling, we train a tactile encoder
-                  through large amounts of play data. A teleoperator collects 2.5 hours of play demonstrations by using an Oculus headset and a buil-in Kinova joystick, 
-                  shown in this figure.
-              </p>
-          </div>
-          <div class="col-6">
-              <img src="./mfiles/robot_setup.png"/>
-          </div>
-
-          <div class="col-12">
-            <h3 class="center m-bottom">Example Play Data</h2> 
-          </div>
-          <div class="col-6">
-            <img src="./mfiles/play_data.gif"/>
-            <p class="center">
-              Example play data tasks done</p>
-          </div>
-          <div class="col-6">
-            <img src="./mfiles/play_data_tactile.gif"/>
-            <p class="center">
-              Example play data tactile readings from top four activated tactile pads.
-            </p>
-          </div>
-        </div>
-    </div>
-
-    <br><br> -->
 
     <div class="container">
       <div class="row">
