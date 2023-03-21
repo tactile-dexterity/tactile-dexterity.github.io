@@ -66,7 +66,7 @@
         <div class="col-3 center">
           <a style="text-decoration: none"  href="https://soumith.ch/" download>
             <h3>Soumith Chintala</h3>
-            <p>Meta AI</p>
+            <p>Meta</p>
           </a>
         </div>
         <div class="col-3 center">
@@ -102,8 +102,8 @@
             In the second phase, given a handful of demonstrations for a dexterous task,
             we learn non-parametric policies that combine the tactile observations with visual ones.
             Across five challenging dexterous tasks, we observe that our <b>tactile-based
-            dexterity models outperform purely vision and torque-
-            based models by an average of 1.7X</b>.
+            dexterity models outperform purely vision and torque-based models by an average
+            of 1.7X</b>.
           </p>
         </div>
       </div>
@@ -114,54 +114,47 @@
       <!-- Policies -->
       <div class="container">
         <div class="row">
-          <div class="col-6">
-              <!-- <img src="./mfiles/main_task/bowl_picking.gif"/> -->
-              <div class="center">
-                <video width="400" playsinline muted autoplay loop>
-                  <source src="./mfiles/main_task/bowl_picking_compressed_trimmed.mp4" type="video/mp4">
-                </video>
-              </div>
-              <h4 class="center">Bowl Unstacking</h4>
+          <div class="col-12">
+            <h2 class="center m-bottom">Policies</h2>
+            <p>
+              We evaluate our framework on several dexterous tasks that are difficult to solve with visual information alone.
+            </p>
           </div>
-          <div class="col-6">
-              <div class="center">
-                <video width="400" playsinline muted autoplay loop>
-                  <source src="./mfiles/main_task/cup_picking_frames_compressed.mp4" type="video/mp4">
-                </video>
-              </div>
-              <h4 class="center">Cup Unstacking</h4>
-          </div>
-        </div>
-        <div class="row">
-        <div class="col-12">
-          <h2 class="center m-bottom">Policies</h2>
-          <p>
-            We test our framework with few dexterous tasks that are hard to complete with only vision imitation.
-          </p>
-        </div>
 
-        <div class="col-4">
-            <!-- <img src="./mfiles/main_task/gamepad.gif"/> -->
+          <div class="col-6">
+            <h4 class="center">Bowl Unstacking</h4>
+              <video width="490" playsinline muted autoplay loop>
+                <source src="./mfiles/main_task/bowl_picking_compressed_trimmed.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="col-6">
+            <h4 class="center">Cup Unstacking</h4>
+              <video width="490" playsinline muted autoplay loop>
+                <source src="./mfiles/main_task/cup_picking_frames_compressed.mp4" type="video/mp4">
+              </video>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-4">
+            <h4 class="center">Joystick Movement</h4>
             <video class="center" width="320" playsinline muted autoplay loop>
               <source src="./mfiles/main_task/gamepad_frames_compressed.mp4" type="video/mp4">
             </video>
-            <h4 class="center">Joystick Movement</h4>
-        </div>
-        <div class="col-4">
-            <!-- <img src="./mfiles/main_task/bottle_opening.gif"/> -->
+          </div>
+          <div class="col-4">
+            <h4 class="center">Bottle Cap Opening</h4>
             <video class="center" width="320" playsinline muted autoplay loop>
               <source src="./mfiles/main_task/bottle_opening_frames_compressed.mp4" type="video/mp4">
             </video>
-            <h4 class="center">Bottle Cap Opening</h4>
-        </div> 
-        <div class="col-4">
-            <!-- <img src="./mfiles/main_task/book_opening.gif"/> -->
+          </div> 
+          <div class="col-4">
+            <h4 class="center">Book Opening</h4>
             <video class="center" width="320" playsinline muted autoplay loop>
               <source src="./mfiles/main_task/book_opening_frames_compressed.mp4" type="video/mp4">
             </video>
-            <h4 class="center">Book Opening</h4>
+          </div>
         </div>
-      </div>
       <!-- <br> -->
       <!-- <hr>  -->
     </div>
@@ -172,8 +165,8 @@
         <div class="col-12">
           <h3 class="center">Generalization</h3>
           <p>
-            We observed that policies learned was able to generalize on structurally similar but visually different objects 
-            in few of the tasks.
+            We observe that our tactile-based policies are able to generalize on new objects that are 
+            structurally similar but visually different. Our policy also fails in some cases, which is indicated by a red cross. 
           </p>
         </div>
 
@@ -184,7 +177,7 @@
           </video>
           <!-- <img src="./mfiles/generalization/cup_unstacking_gen.gif"/>  -->
           <p>
-            Robot rollout for cup unstacking task on different types of cups.
+            Robot rollout for cup unstacking task on unseen cups.
           </p>
         </div>
         
@@ -195,7 +188,7 @@
             <source src="./mfiles/generalization/bowl_generalization.m4v" type="video/mp4">
           </video>
           <p>
-            Robot rollout for bowl unstacking task on different types of bowls.
+            Robot rollout for bowl unstacking task on unseen bowls.
           </p> 
         </div>
       </div>
@@ -205,10 +198,12 @@
     <!--Method-->
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 justify">
           <h2 class="center">Method</h2>
-          <p><a style="color: #00A2FF; font-weight: bold;">T-Dex</a> consists of <b>two phases</b>: First phase is <b>collecting a tactile play data</b>, where a teleoperator collects 2.5 hours of demonstrations
-            and pretraining a tactile encoder from this play data. The second phase is <b>retrieving policies by using nearest neighbor actions</b>. 
+          <p><a style="color: #00A2FF; font-weight: bold;">T-Dex</a> consists of two phases: First phase is to collect a tactile play 
+            dataset, where a 
+            teleoperator collects 2.5 hours of aimless demonstrations. Given this dataset, a tactile encoder is trained using a self-supervised objective.
+            In the second phase a task-specific policy is acquired by leveraging the pre-trained tactile encoder in the first phase. 
           </p>
         </div>
 
@@ -219,20 +214,17 @@
 
         <div class="col-12">
           <h3 class="center m-bottom">Collected Play Data</h3> 
-          <p>
-            Here, we show example tactile and visual data of the play data.
-          </p>
         </div>
        
         <div class="col-6">
           <img src="./mfiles/play_data.gif"/>
           <p class="center">
-            Example play data tasks done</p>
+            Examples of play data collected by a human teleoperator.</p>
         </div>
         <div class="col-6">
           <img src="./mfiles/play_data_tactile.gif"/>
           <p class="center">
-            Example play data tactile readings from top four activated tactile pads.
+            Examples of tactile readings from highest activated tactile pads.
           </p>
         </div>
       </div>
@@ -249,81 +241,46 @@
             policies to T-Dex.
           </p>
 
-          <div class="col-6 center">
-            <video class="center" width="360" playsinline muted autoplay loop>
-              <source src="./mfiles/baseline_comp/tdex_baseline.mp4" type="video/mp4">
-            </video>
-            <!-- <img src="./mfiles/baseline_comp/tdex_cup.gif"/> -->
-            <h3 class="center">T-Dex</h3>
+          <div class="col-12 center">
+            <h4 class="center">T-Dex</h4>
             <p class="center">
               <b>Success:</b> It successfully slides the inner cup.
             </p>
-          </div>
-          <div class="col-6 center">
-            <video class="center" width="360" playsinline muted autoplay loop>
-              <source src="./mfiles/baseline_comp/image_baseline.mp4" type="video/mp4">
+            <video class="center" width="520" playsinline muted autoplay loop>
+              <source src="./mfiles/baseline_comp/tdex_baseline.mp4" type="video/mp4">
             </video>
-            <!-- <img src="./mfiles/baseline_comp/image_only_cup.gif"/> -->
-            <h3 class="center">Image Only NN Matching Policy</h3>
-            <p class="center">
-              <b>Failure:</b> It fails since the policy doesn't know how much force should be applied.
-            </p>
           </div>
-          <div class="col-6 center">
-            <video class="center" width="360" playsinline muted autoplay loop>
-              <source src="./mfiles/baseline_comp/tactile_baseline.mp4" type="video/mp4">
-            </video>
-            <!-- <img src="./mfiles/baseline_comp/tactile_only_cup.gif"/> -->
-            <h3 class="center">Tactile Only NN Matching Policy</h3>
-            <p class="center">
-              <b>Failure:</b> It fails since the policy doesn't know where the object is.
-            </p>
-          </div>
+          
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-6 center">
+          <h4 class="center">Image Only NN Matching Policy</h4>
+          <p class="center">
+            <b>Failure:</b> It fails since the policy doesn't know how much force should be applied.
+          </p>
+          <video class="center" width="360" playsinline muted autoplay loop>
+            <source src="./mfiles/baseline_comp/image_baseline.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-6 center">
+          <h4 class="center">Tactile Only NN Matching Policy</h4>
+          <p class="center">
+            <b>Failure:</b> It fails since the policy doesn't know where the object is.
+          </p>
+          <video class="center" width="360" playsinline muted autoplay loop>
+            <source src="./mfiles/baseline_comp/tactile_baseline.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
     </div>
 
   </div>
 
-
-
   <footer>
   </footer>
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      setInterval(planar_rotation_cycle, 10000);
-      setInterval(object_flipping_cycle, 10000);
-      setInterval(can_spinning_cycle, 10000);
-      setInterval(failure_cycle, 10000);
-
-      var planar_rotation_marker = 1;
-      var object_flipping_marker = 1;
-      var can_spinning_marker = 1;
-      var failure_marker = 1;
-
-      function planar_rotation_cycle() {
-        planar_rotation_marker = (planar_rotation_marker % 6) + 1;
-        $('#cr-' + planar_rotation_marker).prop('checked', true);
-      }
-
-      function object_flipping_cycle() {
-        object_flipping_marker = (object_flipping_marker % 9) + 1;
-        $('#dr-' + object_flipping_marker).prop('checked', true);
-      }
-
-      function can_spinning_cycle() {
-        can_spinning_marker = (can_spinning_marker % 9) + 1;
-        $('#er-' + can_spinning_marker).prop('checked', true);
-      }
-
-      function failure_cycle() {
-        failure_marker = (failure_marker % 4) + 1;
-        $('#fr-' + failure_marker).prop('checked', true);
-      }
-    }); -->
-  <!-- </script> -->
 
 </body>
 
