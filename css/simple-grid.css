@@ -535,3 +535,14 @@ input:not(:checked)+label+.di {
   display: inline-block;
   margin-left: 6px;
 }
+
+section {
+  margin: 32px 0px 32px 0px;
+  text-align: justify;
+  clear: both;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap   
+}
